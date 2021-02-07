@@ -1,0 +1,40 @@
+{% extends "coffeeapp/base.html" %} {% load static %}
+<title>{% block title %}Our Stores{% endblock %}</title>
+
+{% block body %}
+<h1>Our Stores</h1>
+<br />
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">City</th>
+      <th scope="col">Lagos</th>
+      <th scope="col">Ibadan</th>
+      <th scope="col">Abuja</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Orders ...</th>
+      <td>125</td>
+      <td>250</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <th scope="row">Price ...</th>
+      <td>#4,999</td>
+      <td>#6,899</td>
+      <td>#5,399</td>
+    </tr>
+    <tr>
+      <th scope="row">Net Price ...</th>
+      <td>tbd</td>
+      <td>tbd</td>
+      <td>tbd</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<span class="border">The Net Price also has the delivery fees</span>
+{% endblock %}

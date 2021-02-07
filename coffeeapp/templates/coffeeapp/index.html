@@ -1,0 +1,88 @@
+{% extends "coffeeapp/base.html" %} {% load static %} {% block body %}
+<h1><strong style="margin-left: 30px"> Featured Products </strong></h1>
+<br />
+
+<!-- New One -->
+<div class="container">
+  <div id="blog" class="row"></div>
+  <div class="col-md-10 blogShort">
+    <h1>House Blend Coffee</h1>
+    <img
+      src="{% static 'coffeeapp/images/house blend.jpeg' %}"
+      alt="house blend"
+      class="pull-left img-responsive thumb margin10 img-thumbnail"
+    />
+    <article>
+      <p>
+        House Blend coffee is unique to every coffee shop, every roaster, and
+        every drinker. That is what makes them so unique and so special. The
+        blending and serving process is built entirely on the preference of the
+        roaster and/or distributor. For example, Starbucks describes their House
+        Blend as “the very first blend we ever created for you back in 1971. The
+        one blend that set the course for the way our master blenders and
+        roasters work even today. A true reflection of us and delicious cup of
+        coffee, period.”
+      </p>
+    </article>
+    <a
+      class="btn btn-blog pull-right marginBottom10"
+      href="https://www.cartacoffee.com/blogs/island-blog/what-is-house-blend-coffee"
+      target="_blank"
+      >READ MORE</a
+    >
+  </div>
+  <div class="col-md-10 blogShort">
+    <h1>French Roast</h1>
+    <img
+      src="{% static 'coffeeapp/images/french roast.jpeg' %}"
+      alt="french roast"
+      class="pull-left img-responsive thumb margin10 img-thumbnail"
+    />
+    <article>
+      <p>
+        French roast coffee is a popular style and one that many coffee drinkers
+        prefer. This dark roasted coffee has a smoky sweetness and can often
+        have a charred taste. This has caused some coffee geeks to refer to it
+        as a 'burnt' coffee. Yet, how does French roast compare to other coffee
+        beans? If you're looking for something a bit lighter or darker, which
+        style should you choose?
+      </p>
+    </article>
+    <a
+      class="btn btn-blog pull-right marginBottom10"
+      href="https://www.thespruceeats.com/french-roast-coffee-765178#:~:text=French%20roast%20coffee%20is%20a,as%20a%20'burnt'%20coffee."
+      target="_blank"
+      >READ MORE</a
+    >
+  </div>
+
+  <div class="col-md-10 blogShort">
+    <h1>Columbian Roast</h1>
+    <img
+      src="{% static 'coffeeapp/images/columbian roast.jpeg' %}"
+      alt="columbian roast"
+      class="pull-left img-responsive thumb margin10 img-thumbnail"
+    />
+    <article>
+      <p>
+        When browsing a coffee shop menu or buying a bag of coffee beans off the
+        shelf, it’s important to know what makes each type of coffee special.
+        You might be interested in trying something different, such as Colombian
+        coffee, but hesitate out of uncertainty. It’s time to change that!
+        Colombia is famous for growing some of the best coffee beans in the
+        world; the plants thrive under the shade of banana trees in the tropical
+        climate. Because of Colombia’s high altitude, it also shapes the way the
+        bean grows.
+      </p>
+    </article>
+    <a
+      class="btn btn-blog pull-right marginBottom10"
+      href="https://eldoradocoffee.com/blogs/news/colombian-coffee#:~:text=Colombian%20coffee%20also%20has%20a,light%20roasts%20and%20dark%20roasts."
+      target="_blank"
+      >READ MORE</a
+    >
+  </div>
+
+  <div class="col-md-12 gap10"></div>
+</div>
+{% endblock %}

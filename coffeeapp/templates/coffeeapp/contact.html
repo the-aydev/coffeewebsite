@@ -1,0 +1,16 @@
+{% extends "coffeeapp/base.html" %} {% load crispy_forms_tags %} {% load static
+%}
+
+<title>{% block title %}Contact Us{% endblock %}</title>
+{% block body %}
+<h1>Contact Us</h1>
+<br />
+<form action="/contact/" method="POST" class="col-5">
+  {% csrf_token %} {{ form|crispy }}
+  <br />
+  <button type="submit" , name="save" value="save" class="btn btn-success">
+    Submit
+  </button>
+</form>
+
+{% endblock %}
