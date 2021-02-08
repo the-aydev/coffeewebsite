@@ -481,3 +481,4 @@ dmypy.json
 cython_debug/
 
 secret_key.py
+.vscode
